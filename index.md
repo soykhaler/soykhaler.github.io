@@ -5,7 +5,7 @@ layout: default
 
 
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![Daemono](https://raw.githubusercontent.com/soykhaler/soykhaler.github.io/master/KhalerDaemonoBlack%20(3).png)
 
 **¡Hola!** SoyKhaler, un desarrollador de videojuegos con más de 3 años de experiencia en el estudio de videojuegos "Entorno Virtual 3D". Me especializo en el uso de **Unreal Engine** y programación en _blueprints_, y tengo habilidades básicas en C++.
 
