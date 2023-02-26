@@ -5,7 +5,7 @@ layout: default
 
 
 
-![Daemono](https://raw.githubusercontent.com/soykhaler/soykhaler.github.io/master/KhalerDaemonoBlack%20(3).png)
+![Daemono](https://github.com/soykhaler/soykhaler.github.io/blob/master/assets/images/asset-logo.png?raw=true)
 
 **¡Hola!** SoyKhaler, un desarrollador de videojuegos con más de 3 años de experiencia en el estudio de videojuegos "Entorno Virtual 3D". Me especializo en el uso de **Unreal Engine** y programación en _blueprints_, y tengo habilidades básicas en C++.
 
