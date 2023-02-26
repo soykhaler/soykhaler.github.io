@@ -1,125 +1,22 @@
 ---
 layout: default
 ---
-## SoyKhaler
+# SoyKhaler
+
+**¡Hola!** SoyKhaler, un desarrollador de videojuegos con más de 3 años de experiencia en el estudio de videojuegos "Entorno Virtual 3D". Me especializo en el uso de **Unreal Engine** y programación en _blueprints_, y tengo habilidades básicas en C++.
+
+Durante mi actual carrera en "Entorno Virtual", trabajo en el desarrollo de videojuegos VR para clientes en diversas plataformas, incluyendo Android y Meta Quest 2. Me apasiona crear experiencias inmersivas y emocionantes para los jugadores, y me siento muy orgulloso de haber formado parte de proyectos exitosos en la industria del desarrollo de videojuegos.
 
 
-/*Text can be **bold**, _italic_, or ~~strikethrough~~.
+También quiero mencionar que tengo un canal de YouTube dedicado a enseñar a otros cómo desarrollar videojuegos utilizando Unreal Engine. Actualmente tengo más de 6,500 suscriptores y mi objetivo es ayudar a otros desarrolladores a aprender y mejorar sus habilidades en el desarrollo de videojuegos.
 
-[Link to another page](./another-page.html).
+En mi canal, comparto tutoriales y consejos prácticos sobre cómo utilizar Unreal Engine y programación en blueprints para crear juegos increíbles. Me encanta compartir mi conocimiento y experiencia con la comunidad de desarrolladores de videojuegos y ayudar a otros a alcanzar sus metas.
 
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+Creo que es importante no solo aprender de la experiencia propia, sino también compartir esa experiencia con otros. Espero seguir creciendo en mi canal de YouTube y ayudar a más desarrolladores de videojuegos a alcanzar sus objetivos y sueños.
 
 
-### Definition lists can be used with HTML syntax.
+[Juegos desarrollados en Itch.io](https://soykhaler.itch.io).
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+[Tutoriales de Unreal Engine](https://www.youtube.com/channel/UC80r1Xpp-dgfVUyyMZL-tXQ).
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
 
-```
-The final element.
-```*/
