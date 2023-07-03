@@ -3,7 +3,7 @@ layout: default
 ---
 # SoyKhaler
 
-
+<a rel="me" href="https://mastodon.social/@soykhaler">Mastodon</a>
 
 ![Daemono](https://github.com/soykhaler/soykhaler.github.io/blob/master/assets/images/asset-logo.png?raw=true)
 
