@@ -1,47 +1,208 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoyKhaler</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            scale: 3.5;
+        }
+
+        .header img {
+            width: 220px;
+            filter: drop-shadow(0 0 10px rgba(255,255,255,0.1));
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .intro p {
+            color: #aaa;
+            margin-top: 10px;
+        }
+
+        .card {
+            background: #141414;
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            border: 1px solid #222;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #444;
+            transform: translateY(-3px);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .game img {
+            width: 100%;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .platforms {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn {
+            flex: 1 1 calc(50% - 10px);
+            text-align: center;
+            padding: 10px 18px;
+            border-radius: 8px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #ddd;
+        }
+
+        .btn.outline {
+            background: transparent;
+            border: 1px solid #fff;
+            color: white;
+        }
+
+        .btn.outline:hover {
+            background: white;
+            color: black;
+        }
+
+        @media (min-width: 600px) {
+            .btn {
+                flex: 1 1 calc(25% - 10px);
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #222;
+        }
+
+        .footer a {
+            margin: 0 10px;
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="moving-background"></div>
-    <header>
-        <img src="https://img.itch.zone/aW1nLzE2ODgwOTUwLnBuZw==/original/qiQz9s.png" alt="Logo SoyKhaler" class="header-banner">
+
+    <header class="header">
+        <img src="https://img.itch.zone/aW1nLzE2ODgwOTUwLnBuZw==/original/qiQz9s.png" alt="SoyKhaler Logo">
     </header>
-    <main>
+
+    <main class="container">
+
         <section class="intro">
-            <h1>¡Hola! Soy Khaler</h1>
-            <p>Un desarrollador de videojuegos con 5 años de experiencia en C++ y Unreal Engine, y también en otros motores como Godot.</p>
+            <h1>SoyKhaler</h1>
+            <p>Game developer specialized in C++ and Unreal Engine.</p>
         </section>
-        <section class="details">
-            <p>Durante mi actual carrera en "Entorno Virtual", trabajo en el desarrollo de videojuegos VR para clientes en diversas plataformas, incluyendo Android y Meta Quest 2. Me apasiona crear experiencias inmersivas y emocionantes para los jugadores, y me siento muy orgulloso de haber formado parte de proyectos exitosos en la industria del desarrollo de videojuegos.</p>
-            <p>Tengo un canal de YouTube dedicado a enseñar a otros cómo desarrollar videojuegos utilizando Unreal Engine. Actualmente tengo más de 7,200 suscriptores y mi objetivo es ayudar a otros desarrolladores a aprender y mejorar sus habilidades en el desarrollo de videojuegos.</p>
-            <p>En mi canal, comparto tutoriales y consejos prácticos sobre cómo utilizar Unreal Engine y programación en blueprints para crear juegos increíbles. Me encanta compartir mi conocimiento y experiencia con la comunidad de desarrolladores de videojuegos y ayudar a otros a alcanzar sus metas.</p>
-            <p>Creo que es importante no solo aprender de la experiencia propia, sino también compartir esa experiencia con otros. Espero seguir creciendo en mi canal de YouTube y ayudar a más desarrolladores de videojuegos a alcanzar sus objetivos y sueños.</p>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                I'm a game developer with over 5 years of experience working with C++, Unreal Engine, and other technologies like Godot.
+            </p>
+            <p>
+                I specialize in gameplay programming and creating smooth, satisfying movement systems. My work focuses on delivering polished and responsive player experiences.
+            </p>
+            <p>
+                I have developed and released games across multiple platforms including PC, consoles, VR, mobile devices, and even retro systems like ZX Spectrum.
+            </p>
+            <p>
+                I'm also a content creator on YouTube, where I teach Unreal Engine and game development, helping thousands of developers improve their skills.
+            </p>
         </section>
-        <section class="game">
+
+        <section class="card">
+            <h2>YouTube</h2>
+            <p>Over 7,200 subscribers learning Unreal Engine and game development.</p>
+            <br>
+            <a href="https://www.youtube.com/channel/UC80r1Xpp-dgfVUyyMZL-tXQ" target="_blank" class="btn">Visit Channel</a>
+        </section>
+
+        <section class="game card">
             <h2>Parkour Labs</h2>
+
             <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2469260/header.jpg?t=1719593833" alt="Parkour Labs">
-            <p>Parkour Labs es un juego de plataformas inspirado en la estética vaporwave y el modo "surf" del juego Counter-Strike. En el juego, los jugadores se deslizan por rampas y exploran paisajes surrealistas inspirados en la cultura de los años 80 y 90. El objetivo es poner a prueba las habilidades de movimiento y control con el ratón del jugador.</p>
-            <div class="store-links">
-                <a href="https://store.steampowered.com/app/2469260/Parkour_Labs/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/250px-Steam_icon_logo.svg.png" alt="Steam Logo">
-                </a>
-                <a href="https://store.playstation.com/en-us/concept/10015272" target="_blank">
-                    <img src="https://img.icons8.com/ios11/512/FFFFFF/play-station.png" alt="PlayStation Logo">
-                </a>
+
+            <p>
+                Available on PC, consoles, VR and mobile.  
+                Parkour Labs is a movement-focused experience inspired by Counter-Strike surf mechanics.
+            </p>
+
+            <div class="platforms">
+
+                <a href="https://store.steampowered.com/app/2469260/Parkour_Labs/" target="_blank" class="btn">Steam</a>
+                <a href="https://store.playstation.com/es-es/concept/10016431" target="_blank" class="btn">PlayStation</a>
+                <a href="https://www.xbox.com/es-ES/games/store/parkour-labs/9nr54xr41rk8" target="_blank" class="btn">Xbox</a>
+                <a href="https://www.nintendo.com/es-es/Juegos/Programas-descargables-Nintendo-Switch/Parkour-Labs-3042127.html" target="_blank" class="btn">Nintendo</a>
+                <a href="https://www.meta.com/es-es/experiences/parkour-labs/25598284033106391/" target="_blank" class="btn">Meta Quest</a>
+                <a href="https://play.google.com/store/apps/details?id=com.soykhaler.ParkourLabsPRO" target="_blank" class="btn">Android</a>
+                <a href="https://store.epicgames.com/es-ES/p/parkour-labs-4fdd10" target="_blank" class="btn">Epic Games</a>
+                <a href="https://www.matranet.net/boutique/zx/parkourlabs/parkourlabs.php" target="_blank" class="btn ">ZX Spectrum</a>
+
             </div>
         </section>
+
     </main>
-    <footer>
-        <a href="https://soykhaler.itch.io" target="_blank">Juegos en Itch.io</a>
-        <a href="https://www.youtube.com/channel/UC80r1Xpp-dgfVUyyMZL-tXQ" target="_blank">Tutoriales en YouTube</a>
-        
+
+    <footer class="footer">
+        <a href="https://soykhaler.itch.io" target="_blank">Itch.io</a>
+        <a href="https://www.youtube.com/channel/UC80r1Xpp-dgfVUyyMZL-tXQ" target="_blank">YouTube</a>
     </footer>
-    <script src="script.js"></script>
+
 </body>
 </html>
+
