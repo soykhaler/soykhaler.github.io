@@ -1,208 +1,216 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoyKhaler</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0d0d0d;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        .header {
-            text-align: center;
-            padding: 50px 0;
-            scale: 3.5;
-        }
-
-        .header img {
-            width: 220px;
-            filter: drop-shadow(0 0 10px rgba(255,255,255,0.1));
-        }
-
-        .intro {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .intro h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
-
-        .intro p {
-            color: #aaa;
-            margin-top: 10px;
-        }
-
-        .card {
-            background: #141414;
-            padding: 25px;
-            border-radius: 14px;
-            margin-bottom: 25px;
-            border: 1px solid #222;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            border-color: #444;
-            transform: translateY(-3px);
-        }
-
-        .card h2 {
-            margin-bottom: 10px;
-        }
-
-        .game img {
-            width: 100%;
-            border-radius: 10px;
-            margin: 15px 0;
-        }
-
-        .platforms {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .btn {
-            flex: 1 1 calc(50% - 10px);
-            text-align: center;
-            padding: 10px 18px;
-            border-radius: 8px;
-            background: white;
-            color: black;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.2s;
-        }
-
-        .btn:hover {
-            background: #ddd;
-        }
-
-        .btn.outline {
-            background: transparent;
-            border: 1px solid #fff;
-            color: white;
-        }
-
-        .btn.outline:hover {
-            background: white;
-            color: black;
-        }
-
-        @media (min-width: 600px) {
-            .btn {
-                flex: 1 1 calc(25% - 10px);
-            }
-        }
-
-        .footer {
-            text-align: center;
-            padding: 30px;
-            border-top: 1px solid #222;
-        }
-
-        .footer a {
-            margin: 0 10px;
-            color: #aaa;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            color: white;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SoyKhaler | Game &amp; Software Development</title>
+  <meta name="description" content="Perfil de SoyKhaler, desarrollador de videojuegos de Huelva especializado en C++, Unreal Engine, Godot, programación de gameplay y desarrollo multiplataforma.">
+  <meta name="author" content="SoyKhaler">
+  <meta name="theme-color" content="#09090b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#09090b;--panel:#151518;--panel-2:#1b1b20;--line:#2a2a31;--line-2:#40404a;--text:#fafafa;--soft:#d4d4d8;--muted:#a1a1aa;--faint:#71717a;--accent:#60a5fa;--accent-2:#a78bfa;--accent-soft:#3b82f61c;--green:#4ade80;--shadow:0 24px 70px #0008}
+    [data-theme=light]{color-scheme:light;--bg:#f7f7f8;--panel:#fff;--panel-2:#f1f1f3;--line:#e2e2e7;--line-2:#c9c9d0;--text:#18181b;--soft:#3f3f46;--muted:#60606a;--faint:#777781;--accent:#2563eb;--accent-2:#7c3aed;--accent-soft:#2563eb12;--green:#15803d;--shadow:0 24px 70px #18181b1a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(800px 430px at 18% -10%,#2563eb18,transparent 70%),radial-gradient(700px 400px at 88% 5%,#7c3aed14,transparent 72%)}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}svg,img{display:block}.hidden{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .topbar{position:sticky;top:0;z-index:50;height:65px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px)}.navrow{height:64px;max-width:1536px;margin:auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;position:relative}.nav-left,.nav-right,.socials{display:flex;align-items:center}.nav-left,.nav-right{gap:4px}.nav-link{font-size:14px;font-weight:500;padding:10px 12px;color:var(--soft);position:relative;white-space:nowrap}.nav-link:after{content:"";position:absolute;bottom:5px;left:12px;right:12px;height:1px;background:currentColor;transform:scaleX(0);transition:transform .25s}.nav-link:hover:after,.nav-link:focus-visible:after{transform:scaleX(1)}.brand{position:absolute;left:50%;transform:translateX(-50%);font-family:"Funnel Display",sans-serif;font-size:20px;font-weight:800;letter-spacing:.035em;text-transform:uppercase;white-space:nowrap}.brand:hover{color:var(--accent)}.chev{display:inline-block;margin-left:3px;opacity:.55;transition:transform .2s}.drop{position:relative}.drop:hover .chev{transform:rotate(180deg)}.dropmenu{visibility:hidden;opacity:0;transform:translateY(5px);position:absolute;top:100%;left:0;min-width:195px;padding:5px;border:1px solid var(--line);border-radius:10px;background:var(--panel);box-shadow:var(--shadow);transition:.18s}.drop:hover .dropmenu,.drop:focus-within .dropmenu{visibility:visible;opacity:1;transform:none}.dropmenu a{display:block;padding:9px 12px;border-radius:6px;font-size:13px;color:var(--soft)}.dropmenu a:hover{background:var(--panel-2);color:var(--text)}.socials{gap:9px;margin-left:8px}.icon-btn{display:inline-grid;place-items:center;width:32px;height:32px;border:0;border-radius:7px;background:none;padding:6px;color:var(--muted);cursor:pointer;transition:.2s}.icon-btn:hover,.icon-btn:focus-visible{color:var(--text);background:var(--panel-2)}.icon-btn svg{width:20px;height:20px}.hamb{display:none}.mobile-menu{position:absolute;top:64px;left:0;right:0;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--bg);box-shadow:var(--shadow)}.mobile-menu a{display:block;padding:10px 12px;border-radius:7px;color:var(--soft);font-size:14px}.mobile-menu a:hover{background:var(--panel-2)}
+    .crumb{position:sticky;top:64px;z-index:40;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);transition:transform .3s}.crumbin{max-width:1536px;margin:auto;padding:10px 32px;display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted)}.crumb svg{width:16px;height:16px}.current{color:var(--text);text-decoration:underline;text-decoration-color:var(--faint);text-decoration-thickness:2px;text-underline-offset:4px}
+    .container{width:100%;max-width:1280px;margin:auto;padding-left:32px;padding-right:32px}.profile{padding-top:25px;padding-bottom:48px;animation:rise .6s ease-out both}.cover{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:#000;box-shadow:var(--shadow)}.cover img{width:100%;height:auto;aspect-ratio:1400/349;object-fit:contain}.identity{display:grid;grid-template-columns:180px minmax(0,1fr) auto;align-items:end;gap:26px;padding:0 28px;margin-top:-54px;position:relative}.avatar{width:180px;height:180px;border-radius:50%;object-fit:cover;object-position:center;border:6px solid var(--bg);background:var(--panel);box-shadow:0 12px 35px #0007}.identity-copy{padding-bottom:8px}.eyebrow{margin:0 0 7px;color:var(--accent);font:700 11px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase}.identity h1{margin:0;font-family:"Funnel Display",sans-serif;font-size:42px;line-height:1.02;letter-spacing:-.02em}.real-name{margin:7px 0 0;color:var(--muted);font-size:14px}.status{margin-bottom:12px;display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:color-mix(in srgb,var(--panel) 88%,transparent);color:var(--soft);font-size:12px;white-space:nowrap}.status i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px color-mix(in srgb,var(--green) 14%,transparent)}
+    .intro{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(285px,.75fr);gap:32px;margin-top:34px}.about-card,.quick-card{border:1px solid var(--line);border-radius:14px;background:color-mix(in srgb,var(--panel) 88%,transparent)}.about-card{padding:28px 30px}.role{font-size:15px;color:var(--muted);margin:0 0 22px;letter-spacing:.025em}.copy{max-width:72ch;color:var(--soft);line-height:1.78;font-size:15px}.copy p{margin:0 0 18px}.copy p:last-child{margin-bottom:0}.copy a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}.quick-card{padding:24px}.quick-title,.label{text-transform:uppercase;letter-spacing:.11em;color:var(--faint);font-size:11px;font-weight:700;margin:0 0 16px}.fact{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--line)}.fact:last-child{border-bottom:0;padding-bottom:0}.fact:first-of-type{padding-top:0}.fact svg{width:18px;height:18px;flex:0 0 auto;color:var(--accent);margin-top:1px}.fact strong{display:block;font-size:13px;font-weight:600;color:var(--soft)}.fact span{display:block;font-size:12px;color:var(--faint);margin-top:3px;line-height:1.45}.tag-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}.tag{display:inline-flex;align-items:center;padding:5px 9px;border:1px solid var(--line);border-radius:999px;background:var(--panel-2);font-size:11px;color:var(--muted)}
+    .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px}.stat{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:18px 16px;text-align:center;transition:.25s}.stat:hover{border-color:var(--line-2);transform:translateY(-2px)}.stat strong{display:block;font-family:"Funnel Display",sans-serif;font-size:25px;line-height:1;color:var(--text)}.stat span{display:block;color:var(--faint);font-size:11px;margin-top:8px;line-height:1.35}
+    .details{padding-bottom:96px}.rule{border:0;border-top:1px solid var(--line);margin:0 0 36px}.tabs{display:flex;gap:6px;margin-bottom:34px;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{border:0;background:none;padding:11px 17px;color:var(--muted);cursor:pointer;position:relative;font-size:14px;white-space:nowrap}.tab:hover{color:var(--soft)}.tab.active{color:var(--text)}.tab.active:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-2))}.heading{font-family:"Funnel Display",sans-serif;font-size:25px;font-weight:700;margin:0 0 10px}.section-lead{max-width:700px;margin:0 0 34px;color:var(--muted);font-size:14px;line-height:1.65}.panel{animation:fade .3s ease-out}.timeline{border-left:2px solid var(--line);margin-left:8px;max-width:960px}.entry{position:relative;padding:0 0 33px 29px}.entry:last-child{padding-bottom:0}.dot{position:absolute;left:-7px;top:4px;width:12px;height:12px;border:2px solid var(--faint);background:var(--bg);border-radius:50%;transition:.2s}.entry:hover .dot{border-color:var(--accent);background:var(--accent)}.meta{display:flex;align-items:center;gap:13px;margin-bottom:5px}.date{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--faint)}.badge{display:inline-flex;border:1px solid var(--line-2);border-radius:999px;padding:3px 8px;color:var(--muted);font-size:10px;letter-spacing:.04em;white-space:nowrap}.entry h3{font-size:16px;font-weight:600;color:var(--soft);margin:5px 0}.entry p{max-width:850px;font-size:13px;line-height:1.6;color:var(--muted);margin:0}.entry a{color:var(--accent)}
+    .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project{display:flex;flex-direction:column;min-height:210px;padding:24px;border:1px solid var(--line);border-radius:13px;background:var(--panel);transition:.25s;position:relative;overflow:hidden}.project:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-2));opacity:0;transition:.25s}.project:hover{border-color:var(--line-2);transform:translateY(-3px);box-shadow:0 18px 35px #0003}.project:hover:before{opacity:1}.project-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.project h3{font-size:17px;margin:0;color:var(--soft)}.project p{font-size:13px;line-height:1.65;color:var(--muted);margin:15px 0 20px}.project .tag-row{margin-top:auto}.arrow{color:var(--faint);font-size:20px;transition:.2s}.project:hover .arrow{color:var(--accent);transform:translate(2px,-2px)}.featured{grid-column:span 2;min-height:230px;background:linear-gradient(115deg,var(--accent-soft),transparent 55%),var(--panel)}.featured h3{font-size:22px}
+    .skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{border:1px solid var(--line);background:var(--panel);border-radius:13px;padding:24px}.card ul{padding:0;margin:0;list-style:none;display:flex;flex-direction:column;gap:12px}.card li{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:13px;color:var(--soft)}.card li span:first-child{line-height:1.45}.profile-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.profile-link{display:flex;align-items:center;gap:13px;padding:17px;border:1px solid var(--line);border-radius:11px;background:var(--panel);transition:.2s}.profile-link:hover{border-color:var(--line-2);background:var(--panel-2);transform:translateY(-2px)}.profile-link svg{width:22px;height:22px;flex:0 0 auto;color:var(--accent)}.profile-link strong{display:block;font-size:13px;color:var(--soft)}.profile-link span{display:block;margin-top:3px;font-size:11px;color:var(--faint)}.sources{margin-top:34px;padding:20px 22px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}.sources p{margin:0;color:var(--muted);font-size:12px;line-height:1.65}.sources a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}.cta{margin-top:20px;padding:28px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(110deg,var(--accent-soft),transparent 70%),var(--panel);text-align:center}.cta h3{margin:0 0 9px;font-family:"Funnel Display",sans-serif;font-size:22px}.cta p{margin:0 auto 18px;max-width:620px;color:var(--muted);font-size:13px;line-height:1.65}.pill{display:inline-flex;align-items:center;gap:8px;padding:10px 17px;border:1px solid var(--line-2);border-radius:999px;background:var(--text);color:var(--bg);font-size:12px;font-weight:600}.pill:hover{opacity:.88}
+    .tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.tool-card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:24px;transition:transform .25s,border-color .25s,box-shadow .25s}.tool-card:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-2));opacity:.5;transition:opacity .25s}.tool-card:hover{border-color:var(--line-2);transform:translateY(-3px);box-shadow:0 18px 35px #0003}.tool-card:hover:before{opacity:1}.tool-card-wide{grid-column:1/-1}.tool-head{display:flex;align-items:center;gap:14px;margin-bottom:22px}.tool-glyph{display:grid;place-items:center;flex:0 0 auto;width:44px;height:44px;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));border-radius:11px;background:linear-gradient(135deg,var(--accent-soft),color-mix(in srgb,var(--accent-2) 10%,transparent));color:var(--accent);font-family:"Funnel Display",sans-serif;font-size:13px;font-weight:800;letter-spacing:.03em}.tool-head h3{margin:0;font-size:17px;color:var(--soft)}.tool-head p{margin:4px 0 0;color:var(--faint);font-size:11px}.tool-list{display:flex;flex-direction:column;gap:9px}.tool-item{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:52px;padding:12px 14px;border:1px solid var(--line);border-radius:9px;background:var(--panel-2)}.tool-item strong{font-size:13px;font-weight:600;color:var(--soft)}.tool-item span{font-size:10px;color:var(--faint);white-space:nowrap}.os-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.os-list .tool-item{min-height:68px;align-items:flex-start;flex-direction:column;justify-content:center}.os-list .preferred{border-color:color-mix(in srgb,var(--accent) 50%,var(--line));background:linear-gradient(120deg,var(--accent-soft),var(--panel-2))}.os-list .preferred strong{color:var(--accent)}
+    footer{border-top:1px solid var(--line);padding:34px;text-align:center;color:var(--faint);font-size:12px}footer p{margin:0 0 9px}footer a{text-decoration:underline;text-underline-offset:3px;margin:0 7px}footer a:hover{color:var(--soft)}
+    :focus-visible{outline:2px solid var(--accent);outline-offset:3px}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+    @media(max-width:1199px){.nav-left,.nav-right .secondary{display:none}.hamb{display:grid}.navrow{padding:0 20px}.socials{margin-left:auto}.crumbin{padding-left:20px;padding-right:20px}.profile-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:900px){.container{padding-left:22px;padding-right:22px}.identity{grid-template-columns:145px 1fr;padding:0 18px;margin-top:-42px}.avatar{width:145px;height:145px}.identity-status{display:none}.intro{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}.stat:nth-child(4),.stat:nth-child(5){grid-column:span 1}.project-grid,.skill-grid,.tool-grid{grid-template-columns:1fr}.featured,.tool-card-wide{grid-column:auto}.profile-links{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.navrow{padding:0 11px}.socials{gap:2px}.socials .desktop-social{display:none}.crumbin{padding-left:14px;padding-right:14px}.container{padding-left:14px;padding-right:14px}.profile{padding-top:14px;padding-bottom:38px}.cover{border-radius:10px}.identity{grid-template-columns:104px 1fr;gap:13px;margin-top:-24px;padding:0 10px;align-items:end}.avatar{width:104px;height:104px;border-width:4px}.identity-copy{padding-bottom:0}.eyebrow{font-size:9px;margin-bottom:5px}.identity h1{font-size:29px}.real-name{font-size:12px;margin-top:4px}.intro{margin-top:25px;gap:14px}.about-card{padding:22px 20px}.quick-card{padding:20px}.role{font-size:13px}.copy{font-size:14px}.stats{grid-template-columns:repeat(2,1fr);gap:9px}.stat:last-child{grid-column:span 2}.stat{padding:15px 10px}.stat strong{font-size:22px}.details{padding-bottom:70px}.tabs{margin-bottom:28px}.tab{padding:10px 13px;font-size:13px}.meta{align-items:flex-start;flex-direction:column;gap:5px}.project,.card,.tool-card{padding:20px}.os-list{grid-template-columns:1fr}.profile-links{grid-template-columns:1fr}.cta{padding:24px 18px}.cover img{min-height:87px}}
+  </style>
 </head>
-
 <body>
+  <header class="topbar">
+    <div class="navrow">
+      <nav class="nav-left" aria-label="Navegación principal">
+        <div class="drop"><a class="nav-link" href="#proyectos">Proyectos <span class="chev">⌄</span></a><div class="dropmenu"><a href="https://store.steampowered.com/app/2469260/Parkour_Labs/" target="_blank" rel="noreferrer">Parkour Labs</a><a href="https://soykhaler.itch.io/" target="_blank" rel="noreferrer">Catálogo en itch.io</a><a href="https://play.google.com/store/apps/developer?id=SoyKhaler" target="_blank" rel="noreferrer">Juegos en Google Play</a></div></div>
+        <div class="drop"><a class="nav-link" href="#perfil">Contenido <span class="chev">⌄</span></a><div class="dropmenu"><a href="https://www.youtube.com/channel/UC80r1Xpp-dgfVUyyMZL-tXQ" target="_blank" rel="noreferrer">YouTube</a><a href="https://pixabay.com/users/soykhaler-6351521/" target="_blank" rel="noreferrer">Pixabay</a><a href="https://music.apple.com/es/artist/soykhaler/1600919217" target="_blank" rel="noreferrer">Música</a></div></div>
+        <a class="nav-link" href="https://soykhaler.github.io/" target="_blank" rel="noreferrer">Web oficial</a>
+      </nav>
+      <button class="icon-btn hamb" id="menuBtn" aria-label="Abrir navegación" aria-expanded="false"><svg id="menuIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <a class="brand" href="#inicio">SoyKhaler</a>
+      <div class="nav-right">
+        <nav class="secondary" aria-label="Navegación secundaria"><a class="nav-link" href="#sobre-mi">Sobre mí</a><a class="nav-link" href="#perfil">Enlaces</a></nav>
+        <div class="socials">
+          <a class="icon-btn desktop-social" href="https://github.com/soykhaler" target="_blank" rel="noreferrer" aria-label="GitHub"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6V21c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg></a>
+          <a class="icon-btn desktop-social" href="https://www.youtube.com/channel/UC80r1Xpp-dgfVUyyMZL-tXQ" target="_blank" rel="noreferrer" aria-label="YouTube"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/khalerguita" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.4 20.5h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 110-4.1 2.1 2.1 0 010 4.1zm1.8 13.1H3.6V9h3.5v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a>
+          <button class="icon-btn" id="themeBtn" aria-label="Cambiar modo claro u oscuro"><svg id="sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.4 6.4l-.7-.7M6.3 6.3l-.7-.7m12.8 0l-.7.7M6.3 17.7l-.7.7M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><svg id="moon" class="hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20.4 15.4A9 9 0 018.6 3.6 9 9 0 1020.4 15.4z"/></svg></button>
+        </div>
+      </div>
+      <nav id="mobileMenu" class="mobile-menu hidden" aria-label="Navegación móvil"><a href="#sobre-mi">Sobre mí</a><a href="#trayectoria">Trayectoria</a><a href="#proyectos">Proyectos</a><a href="#herramientas">Herramientas</a><a href="#perfil">Enlaces</a><a href="https://soykhaler.github.io/" target="_blank" rel="noreferrer">Web oficial ↗</a></nav>
+    </div>
+  </header>
 
-    <header class="header">
-        <img src="https://img.itch.zone/aW1nLzE2ODgwOTUwLnBuZw==/original/qiQz9s.png" alt="SoyKhaler Logo">
-    </header>
+  <nav class="crumb" id="crumb" aria-label="Migas de pan"><div class="crumbin"><a href="#inicio" aria-label="Inicio"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h5v-5h4v5h5V10"/></svg></a><span>›</span><span class="current">Perfil</span></div></nav>
 
-    <main class="container">
+  <main id="inicio">
+    <section class="container profile" id="sobre-mi">
+      <div class="cover"><img src="assets/soykhaler-banner.jpg" width="1400" height="349" alt="SoyKhaler y Parkour Labs, finalista a Mejor Juego TECH-XR 2026"></div>
+      <div class="identity">
+        <img class="avatar" src="assets/soykhaler-portrait.jpg" width="250" height="250" alt="Retrato de SoyKhaler">
+        <div class="identity-copy"><p class="eyebrow">Game &amp; Software Development</p><h1>SoyKhaler</h1><p class="real-name">Diego Ortiz Más · Huelva, España</p></div>
+        <div class="identity-status"><span class="status"><i></i> Desarrollador independiente</span></div>
+      </div>
 
-        <section class="intro">
-            <h1>SoyKhaler</h1>
-            <p>Game developer specialized in C++ and Unreal Engine.</p>
-        </section>
+      <div class="intro">
+        <article class="about-card">
+          <p class="role">Gameplay Programmer · Indie Developer · 3D Artist · Creador de contenido</p>
+          <div class="copy">
+            <p>Soy Diego Ortiz Más, conocido en internet como <strong>SoyKhaler</strong>. Soy desarrollador de videojuegos de Huelva y trabajo especialmente con <strong>C++, Unreal Engine y Godot</strong>. Mi foco está en la programación de gameplay y en construir sistemas de movimiento fluidos, precisos y satisfactorios.</p>
+            <p>Llevo más de cinco años creando juegos, herramientas y experiencias interactivas. He publicado proyectos para PC, consolas, realidad virtual, móviles y sistemas retro. Me interesa tanto la parte técnica como la creativa: programación, diseño de mecánicas, arte 3D, edición de vídeo, fotografía, sonido y música.</p>
+            <p>Mi proyecto principal es <a href="https://store.steampowered.com/app/2469260/Parkour_Labs/" target="_blank" rel="noreferrer">Parkour Labs</a>, un plataformas en primera persona centrado en velocidad, precisión y “flow”, con estética vaporwave. Lo desarrollé en solitario durante dos años y dediqué otro año a adaptarlo y pulirlo para consolas. Tras su lanzamiento en PC, el juego llegó en 2026 a PS5, Xbox Series, Nintendo Switch, Meta Quest y PSVR2, además de contar con versiones para Android, PS Vita, Game Boy y ZX Spectrum.</p>
+            <p>También comparto tutoriales de Unreal Engine y desarrollo de videojuegos en YouTube, publico software abierto en GitHub y distribuyo juegos, herramientas y experimentos en itch.io.</p>
+          </div>
+          <div class="tag-row" aria-label="Especialidades"><span class="tag">Unreal Engine</span><span class="tag">C++</span><span class="tag">Godot</span><span class="tag">Gameplay</span><span class="tag">VR</span><span class="tag">Blender</span><span class="tag">Open source</span></div>
+        </article>
 
-        <section class="card">
-            <h2>About Me</h2>
-            <p>
-                I'm a game developer with over 5 years of experience working with C++, Unreal Engine, and other technologies like Godot.
-            </p>
-            <p>
-                I specialize in gameplay programming and creating smooth, satisfying movement systems. My work focuses on delivering polished and responsive player experiences.
-            </p>
-            <p>
-                I have developed and released games across multiple platforms including PC, consoles, VR, mobile devices, and even retro systems like ZX Spectrum.
-            </p>
-            <p>
-                I'm also a content creator on YouTube, where I teach Unreal Engine and game development, helping thousands of developers improve their skills.
-            </p>
-        </section>
+        <aside class="quick-card" aria-label="Datos rápidos">
+          <h2 class="quick-title">Datos rápidos</h2>
+          <div class="fact"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 7 .9-5 4.8 1.3 6.8L12 17.3l-6.3 3.2L7 13.7 2 8.9 9 8l3-6z"/></svg><div><strong>Finalista Iris Games 2026</strong><span>Parkour Labs · Mejor Videojuego TECH/XR</span></div></div>
+          <div class="fact"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 2v4m8-4v4M3 10h18M5 5h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"/></svg><div><strong>Más de 5 años</strong><span>Desarrollo de videojuegos y software</span></div></div>
+          <div class="fact"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 17l4-4 4 4 8-8M14 9h6v6"/></svg><div><strong>Multiplataforma</strong><span>PC, consola, VR, móvil y hardware retro</span></div></div>
+          <div class="fact"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4zM8 9h8M8 13h5"/></svg><div><strong>Software abierto</strong><span>90 repositorios públicos en GitHub</span></div></div>
+          <div class="fact"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 20V9l7-5 7 5v11M9 20v-6h6v6"/></svg><div><strong>Base en Huelva</strong><span>Andalucía, España</span></div></div>
+        </aside>
+      </div>
 
-        <section class="card">
-            <h2>YouTube</h2>
-            <p>Over 7,200 subscribers learning Unreal Engine and game development.</p>
-            <br>
-            <a href="https://www.youtube.com/channel/UC80r1Xpp-dgfVUyyMZL-tXQ" target="_blank" class="btn">Visit Channel</a>
-        </section>
+      <div class="stats" aria-label="Cifras públicas aproximadas">
+        <div class="stat"><strong>7.3K+</strong><span>suscriptores en YouTube</span></div>
+        <div class="stat"><strong>90</strong><span>repositorios en GitHub</span></div>
+        <div class="stat"><strong>200+</strong><span>recursos en Pixabay</span></div>
+        <div class="stat"><strong>1.4M+</strong><span>visualizaciones en Pixabay</span></div>
+        <div class="stat"><strong>560K+</strong><span>descargas en Pixabay</span></div>
+      </div>
+    </section>
 
-        <section class="game card">
-            <h2>Parkour Labs</h2>
+    <section class="container details">
+      <hr class="rule">
+      <div class="tabs" role="tablist" aria-label="Contenido del perfil">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="trayectoria" data-tab="trayectoria">Trayectoria</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="proyectos" data-tab="proyectos">Proyectos</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="herramientas" data-tab="herramientas">Herramientas</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="perfil" data-tab="perfil">Enlaces</button>
+      </div>
 
-            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2469260/header.jpg?t=1719593833" alt="Parkour Labs">
+      <div class="panel" id="trayectoria" role="tabpanel">
+        <h2 class="heading">Trayectoria y lanzamientos</h2>
+        <p class="section-lead">Una selección de hitos comprobables en sus perfiles y páginas públicas. Las fechas reflejan lanzamientos, formación y actividad creativa.</p>
+        <div class="timeline">
+          <article class="entry"><i class="dot"></i><div class="meta"><span class="date">2026</span><span class="badge">Reconocimiento</span></div><h3>Parkour Labs, finalista en los Premios Iris Games</h3><p>Seleccionado en la categoría de Mejor Videojuego TECH/XR entre 288 candidaturas. El proyecto representó a Huelva dentro de una selección de 36 finalistas.</p></article>
+          <article class="entry"><i class="dot"></i><div class="meta"><span class="date">12 MAR 2026</span><span class="badge">Lanzamiento</span></div><h3>Salto de Parkour Labs a consolas y realidad virtual</h3><p>Lanzamiento en PlayStation 5, Xbox Series X|S, Nintendo Switch y Meta Quest, con compatibilidad para PSVR2 y una gran actualización de Steam con soporte VR.</p></article>
+          <article class="entry"><i class="dot"></i><div class="meta"><span class="date">19 MAY 2026</span><span class="badge">Móvil</span></div><h3>Ruta Colombina</h3><p>Desarrollo técnico, junto a Adrián Chicón, de un quiz gratuito para Android sobre historia, cultura, gastronomía, deporte y curiosidades de la provincia de Huelva.</p></article>
+          <article class="entry"><i class="dot"></i><div class="meta"><span class="date">2025</span><span class="badge">Publicación</span></div><h3>Libro de arte y making-of de Parkour Labs</h3><p>Publicación de <em>Parkour Labs: Cómo se hizo &amp; Libro de Arte</em>. Ese mismo año dirigió, escribió y programó <a href="https://soykhaler.itch.io/ladeuda" target="_blank" rel="noreferrer">La Deuda</a>, creada en menos de 48 horas para Crowned Game Jam.</p></article>
+          <article class="entry"><i class="dot"></i><div class="meta"><span class="date">28 JUN 2024</span><span class="badge">Lanzamiento</span></div><h3>Parkour Labs se publica en PC y Android</h3><p>Videojuego de parkour en primera persona desarrollado con Unreal Engine. Su banda sonora original, compuesta por SoyKhaler, se publicó también en plataformas musicales en 2024.</p></article>
+          <article class="entry"><i class="dot"></i><div class="meta"><span class="date">2023</span><span class="badge">Desarrollo</span></div><h3>PS Vita, herramientas abiertas y proyectos Godot</h3><p>Versión de Parkour Labs para PS Vita, publicación de 2PlayersPong y desarrollo de herramientas abiertas como TinyPixelArt y QuickDesigner.</p></article>
+          <article class="entry"><i class="dot"></i><div class="meta"><span class="date">2022</span><span class="badge">Videojuego</span></div><h3>Exilio — Vertical Slice</h3><p>Aventura de exploración creada con Unreal Engine, con programación, modelado 3D y música acreditados a Diego Ortiz Más / SoyKhaler.</p></article>
+          <article class="entry"><i class="dot"></i><div class="meta"><span class="date">2017 — ACTUALIDAD</span><span class="badge">Audiovisual</span></div><h3>Fotografía, vídeo, ilustración y música en Pixabay</h3><p>Catálogo público de más de 200 recursos, con más de 1,4 millones de visualizaciones y 560.000 descargas acumuladas a julio de 2026.</p></article>
+          <article class="entry"><i class="dot"></i><div class="meta"><span class="date">2017</span><span class="badge">Formación</span></div><h3>Vídeo Disc-Jockey y Sonido · IES Pablo Neruda</h3><p>Graduado en la primera promoción del ciclo; formación audiovisual y sonora complementada posteriormente con cursos de Blender, After Effects, Autodesk Maya, Unreal con C++ y Blueprints, C++, diseño y marketing de videojuegos.</p></article>
+          <article class="entry"><i class="dot"></i><div class="meta"><span class="date">ACTUALIDAD</span><span class="badge">Profesional</span></div><h3>Desarrollo independiente, Entorno Virtual y creación de contenido</h3><p>Su presencia profesional pública lo sitúa en desarrollo de videojuegos, edición de vídeo, producción de proyectos propios y enseñanza de Unreal Engine y game development en YouTube.</p></article>
+        </div>
+      </div>
 
-            <p>
-                Available on PC, consoles, VR and mobile.  
-                Parkour Labs is a movement-focused experience inspired by Counter-Strike surf mechanics.
-            </p>
+      <div class="panel hidden" id="proyectos" role="tabpanel">
+        <h2 class="heading">Juegos, software y experimentos</h2>
+        <p class="section-lead">Una muestra de un catálogo amplio que combina lanzamientos comerciales, game jams, herramientas educativas y proyectos open source.</p>
+        <div class="project-grid">
+          <a class="project featured" href="https://store.steampowered.com/app/2469260/Parkour_Labs/" target="_blank" rel="noreferrer"><div class="project-top"><h3>Parkour Labs</h3><span class="arrow">↗</span></div><p>Plataformas en primera persona basado en velocidad, surf, precisión y dominio del movimiento. Estética vaporwave, 60 niveles, modo VR y versiones para PC, PS5, Xbox Series, Switch, Meta Quest, Android, PS Vita, Game Boy y ZX Spectrum.</p><div class="tag-row"><span class="tag">Unreal Engine</span><span class="tag">C++</span><span class="tag">VR</span><span class="tag">Multiplataforma</span><span class="tag">Iris Games 2026</span></div></a>
+          <a class="project" href="https://soykhaler.itch.io/exilio" target="_blank" rel="noreferrer"><div class="project-top"><h3>Exilio</h3><span class="arrow">↗</span></div><p>Vertical slice de aventura y exploración. Programación, modelado 3D y música de SoyKhaler, desarrollado con Unreal Engine.</p><div class="tag-row"><span class="tag">Unreal Engine</span><span class="tag">3D</span><span class="tag">Aventura</span></div></a>
+          <a class="project" href="https://soykhaler.itch.io/ladeuda" target="_blank" rel="noreferrer"><div class="project-top"><h3>La Deuda</h3><span class="arrow">↗</span></div><p>Juego-película interactiva creada en menos de 48 horas para Crowned Game Jam 2025. Dirección, guion y programación de Diego Ortiz Más.</p><div class="tag-row"><span class="tag">Godot</span><span class="tag">Game Jam</span><span class="tag">Ficción interactiva</span></div></a>
+          <a class="project" href="https://soykhaler.itch.io/tinycomputer" target="_blank" rel="noreferrer"><div class="project-top"><h3>tinyComputer</h3><span class="arrow">↗</span></div><p>Ordenador retro virtual y abierto para aprender programación, experimentar con comandos y utilizar pequeñas herramientas 2D y 3D.</p><div class="tag-row"><span class="tag">Godot</span><span class="tag">Educación</span><span class="tag">Open source</span></div></a>
+          <a class="project" href="https://soykhaler.itch.io/openopenopenopen" target="_blank" rel="noreferrer"><div class="project-top"><h3>OPEN!OPEN!OPEN!OPEN!</h3><span class="arrow">↗</span></div><p>Novela visual de terror psicológico experimental, creada con Godot en tres horas para la jam “The Shorter, The Better”.</p><div class="tag-row"><span class="tag">Godot</span><span class="tag">HTML5</span><span class="tag">Horror</span></div></a>
+          <a class="project" href="https://soykhaler.itch.io/tinypixelart" target="_blank" rel="noreferrer"><div class="project-top"><h3>TinyPixelArt</h3><span class="arrow">↗</span></div><p>Aplicación open source para dibujar pixel art de manera sencilla y rápida, disponible en Windows, macOS y Linux.</p><div class="tag-row"><span class="tag">Godot</span><span class="tag">Pixel art</span><span class="tag">Open source</span></div></a>
+          <a class="project" href="https://soykhaler.itch.io/quickdesigner" target="_blank" rel="noreferrer"><div class="project-top"><h3>QuickDesigner</h3><span class="arrow">↗</span></div><p>Herramienta abierta de diseño rápido orientada a miniaturas de YouTube y piezas gráficas simples.</p><div class="tag-row"><span class="tag">GDScript</span><span class="tag">Diseño</span><span class="tag">Open source</span></div></a>
+          <a class="project" href="https://soykhaler.itch.io/vr-framework-unreal-engine" target="_blank" rel="noreferrer"><div class="project-top"><h3>VR Framework</h3><span class="arrow">↗</span></div><p>Base educativa para crear proyectos de realidad virtual en Unreal Engine 4.27.2 y Oculus Quest sin programación Blueprint adicional.</p><div class="tag-row"><span class="tag">Unreal Engine</span><span class="tag">Oculus Quest</span><span class="tag">VR</span></div></a>
+          <a class="project" href="https://play.google.com/store/apps/details?id=com.soykhaler.rutacolombina" target="_blank" rel="noreferrer"><div class="project-top"><h3>Ruta Colombina</h3><span class="arrow">↗</span></div><p>Juego de preguntas para Android que pone a prueba el conocimiento sobre la provincia de Huelva. Desarrollo técnico de SoyKhaler junto a Adrián Chicón.</p><div class="tag-row"><span class="tag">Android</span><span class="tag">Quiz</span><span class="tag">Huelva</span></div></a>
+        </div>
+      </div>
 
-            <div class="platforms">
+      <div class="panel hidden" id="herramientas" role="tabpanel">
+        <h2 class="heading">Herramientas</h2>
+        <p class="section-lead">El software que utilizo habitualmente, organizado por cada área de trabajo creativo y técnico.</p>
+        <div class="tool-grid">
+          <article class="tool-card">
+            <div class="tool-head"><span class="tool-glyph">3D</span><div><h3>3D</h3><p>Modelado, materiales y entornos en tiempo real</p></div></div>
+            <div class="tool-list"><div class="tool-item"><strong>Blender</strong><span>Modelado y render</span></div><div class="tool-item"><strong>Unreal Engine</strong><span>Entornos 3D</span></div></div>
+          </article>
+          <article class="tool-card">
+            <div class="tool-head"><span class="tool-glyph">CUT</span><div><h3>Edición de vídeo</h3><p>Montaje, ritmo y postproducción</p></div></div>
+            <div class="tool-list"><div class="tool-item"><strong>Blender (VSE)</strong><span>Edición</span></div><div class="tool-item"><strong>DaVinci Resolve Studio</strong><span>Edición y color</span></div></div>
+          </article>
+          <article class="tool-card">
+            <div class="tool-head"><span class="tool-glyph">♪</span><div><h3>Composición musical</h3><p>Producción, grabación y bandas sonoras</p></div></div>
+            <div class="tool-list"><div class="tool-item"><strong>LMMS</strong><span>Composición</span></div><div class="tool-item"><strong>REAPER</strong><span>Producción de audio</span></div></div>
+          </article>
+          <article class="tool-card">
+            <div class="tool-head"><span class="tool-glyph">DEV</span><div><h3>Desarrollo de videojuegos</h3><p>Gameplay, prototipos y publicación</p></div></div>
+            <div class="tool-list"><div class="tool-item"><strong>Godot Engine</strong><span>GDScript</span></div><div class="tool-item"><strong>Unreal Engine</strong><span>C++ y Blueprints</span></div></div>
+          </article>
+          <article class="tool-card tool-card-wide">
+            <div class="tool-head"><span class="tool-glyph">OS</span><div><h3>Sistemas operativos</h3><p>Trabajo con los tres, aunque mi entorno preferido es Linux</p></div></div>
+            <div class="os-list"><div class="tool-item preferred"><strong>Linux</strong><span>Entorno principal</span></div><div class="tool-item"><strong>Windows</strong></div><div class="tool-item"><strong>macOS</strong></div></div>
+          </article>
+        </div>
+      </div>
 
-                <a href="https://store.steampowered.com/app/2469260/Parkour_Labs/" target="_blank" class="btn">Steam</a>
-                <a href="https://store.playstation.com/es-es/concept/10016431" target="_blank" class="btn">PlayStation</a>
-                <a href="https://www.xbox.com/es-ES/games/store/parkour-labs/9nr54xr41rk8" target="_blank" class="btn">Xbox</a>
-                <a href="https://www.nintendo.com/es-es/Juegos/Programas-descargables-Nintendo-Switch/Parkour-Labs-3042127.html" target="_blank" class="btn">Nintendo</a>
-                <a href="https://www.meta.com/es-es/experiences/parkour-labs/25598284033106391/" target="_blank" class="btn">Meta Quest</a>
-                <a href="https://play.google.com/store/apps/details?id=com.soykhaler.ParkourLabsPRO" target="_blank" class="btn">Android</a>
-                <a href="https://store.epicgames.com/es-ES/p/parkour-labs-4fdd10" target="_blank" class="btn">Epic Games</a>
-                <a href="https://www.matranet.net/boutique/zx/parkourlabs/parkourlabs.php" target="_blank" class="btn ">ZX Spectrum</a>
+      <div class="panel hidden" id="perfil" role="tabpanel">
+        <h2 class="heading">Perfiles y plataformas oficiales</h2>
+        <p class="section-lead">Enlaces públicos donde puedes encontrar sus juegos, código, tutoriales, fotografía, música y actividad profesional.</p>
+        <div class="profile-links">
+          <a class="profile-link" href="https://soykhaler.github.io/" target="_blank" rel="noreferrer"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.4 3 14.6 0 18M12 3c-3 3.4-3 14.6 0 18"/></svg><div><strong>Web oficial</strong><span>soykhaler.github.io</span></div></a>
+          <a class="profile-link" href="https://store.steampowered.com/app/2469260/Parkour_Labs/" target="_blank" rel="noreferrer"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-9.8 8.1l5.3 2.2a2.8 2.8 0 011.6-.5l2.4-3.5a3.8 3.8 0 113.8 3.8l-3.5 2.5a2.8 2.8 0 01-5.5.6l-3.8-1.6A10 10 0 1012 2zm-3 14.5l-1-.4a2.1 2.1 0 001.1 1.1 2 2 0 002.6-1.1 2 2 0 00-1-2.5 2 2 0 00-1.5-.1l1.2.5a1.5 1.5 0 11-1.2 2.8L9 16.5zm6.3-5.7a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg><div><strong>Steam</strong><span>Parkour Labs</span></div></a>
+          <a class="profile-link" href="https://soykhaler.itch.io/" target="_blank" rel="noreferrer"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 8l2-4h14l2 4v3a3 3 0 01-3 3 3 3 0 01-3-2 3 3 0 01-6 0 3 3 0 01-3 2 3 3 0 01-3-3V8zM5 14v6h14v-6"/></svg><div><strong>itch.io</strong><span>Juegos y herramientas</span></div></a>
+          <a class="profile-link" href="https://github.com/soykhaler" target="_blank" rel="noreferrer"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6V21c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg><div><strong>GitHub</strong><span>90 repositorios públicos</span></div></a>
+          <a class="profile-link" href="https://www.youtube.com/channel/UC80r1Xpp-dgfVUyyMZL-tXQ" target="_blank" rel="noreferrer"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg><div><strong>YouTube</strong><span>Tutoriales y desarrollo</span></div></a>
+          <a class="profile-link" href="https://pixabay.com/users/soykhaler-6351521/" target="_blank" rel="noreferrer"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 15l-5-4-8 7"/></svg><div><strong>Pixabay</strong><span>Foto, vídeo, audio e ilustración</span></div></a>
+          <a class="profile-link" href="https://play.google.com/store/apps/developer?id=SoyKhaler" target="_blank" rel="noreferrer"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 3l14 9L4 21V3z"/></svg><div><strong>Google Play</strong><span>Juegos y aplicaciones Android</span></div></a>
+          <a class="profile-link" href="https://www.linkedin.com/in/khalerguita" target="_blank" rel="noreferrer"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.4 20.5h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 110-4.1 2.1 2.1 0 010 4.1zm1.8 13.1H3.6V9h3.5v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg><div><strong>LinkedIn</strong><span>Perfil profesional</span></div></a>
+          <a class="profile-link" href="https://music.apple.com/es/artist/soykhaler/1600919217" target="_blank" rel="noreferrer"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 18V5l10-2v13M9 9l10-2"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg><div><strong>Apple Music</strong><span>Singles y bandas sonoras</span></div></a>
+        </div>
+        <div class="cta"><h3>Descubre todo el catálogo</h3><p>En itch.io se encuentran juegos completos, prototipos, herramientas abiertas, frameworks, ports retro y experimentos publicados por SoyKhaler.</p><a class="pill" href="https://soykhaler.itch.io/" target="_blank" rel="noreferrer">Visitar itch.io <span>↗</span></a></div>
+        <div class="sources"><p><strong>Fuentes:</strong> información recopilada de la <a href="https://soykhaler.github.io/" target="_blank" rel="noreferrer">web oficial</a>, <a href="https://github.com/soykhaler" target="_blank" rel="noreferrer">GitHub</a>, <a href="https://soykhaler.itch.io/" target="_blank" rel="noreferrer">itch.io</a>, <a href="https://store.steampowered.com/app/2469260/Parkour_Labs/" target="_blank" rel="noreferrer">Steam</a>, <a href="https://news.xbox.com/en-us/2026/03/13/parkour-labs-conquer-neon-skies-and-defy-gravity/" target="_blank" rel="noreferrer">Xbox Wire</a>, <a href="https://pixabay.com/users/soykhaler-6351521/" target="_blank" rel="noreferrer">Pixabay</a>, <a href="https://www.devuego.es/codice/fautor/soykhaler" target="_blank" rel="noreferrer">DeVuego</a>, LinkedIn, el IES Pablo Neruda y el comunicado oficial de finalistas de los Premios Iris Games. Cifras consultadas el 21 de julio de 2026; pueden variar con el tiempo.</p></div>
+      </div>
+    </section>
+  </main>
 
-            </div>
-        </section>
+  <footer><p>© 2026 SoyKhaler · Página informativa creada a partir de perfiles públicos.</p><div><a href="https://soykhaler.github.io/" target="_blank" rel="noreferrer">Web oficial</a><a href="https://soykhaler.itch.io/" target="_blank" rel="noreferrer">itch.io</a><a href="https://github.com/soykhaler" target="_blank" rel="noreferrer">GitHub</a></div></footer>
 
-    </main>
+  <script>
+    const root=document.documentElement;
+    const themeBtn=document.querySelector('#themeBtn');
+    const sun=document.querySelector('#sun');
+    const moon=document.querySelector('#moon');
+    const saved=localStorage.getItem('theme');
+    if(saved==='light'||saved==='dark')root.dataset.theme=saved;
+    function syncTheme(){const light=root.dataset.theme==='light';sun.classList.toggle('hidden',light);moon.classList.toggle('hidden',!light);document.querySelector('meta[name="theme-color"]').content=light?'#f7f7f8':'#09090b'}
+    syncTheme();
+    themeBtn.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';localStorage.setItem('theme',root.dataset.theme);syncTheme()});
 
-    <footer class="footer">
-        <a href="https://soykhaler.itch.io" target="_blank">Itch.io</a>
-        <a href="https://www.youtube.com/channel/UC80r1Xpp-dgfVUyyMZL-tXQ" target="_blank">YouTube</a>
-    </footer>
+    const menuBtn=document.querySelector('#menuBtn');
+    const mobileMenu=document.querySelector('#mobileMenu');
+    menuBtn.addEventListener('click',()=>{const open=mobileMenu.classList.toggle('hidden')===false;menuBtn.setAttribute('aria-expanded',String(open));menuBtn.setAttribute('aria-label',open?'Cerrar navegación':'Abrir navegación')});
+    mobileMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{mobileMenu.classList.add('hidden');menuBtn.setAttribute('aria-expanded','false')}));
 
+    const tabs=[...document.querySelectorAll('.tab')];
+    const panels=[...document.querySelectorAll('.panel')];
+    function showTab(id,updateHash=true){const target=document.getElementById(id);if(!target)return;tabs.forEach(tab=>{const active=tab.dataset.tab===id;tab.classList.toggle('active',active);tab.setAttribute('aria-selected',String(active))});panels.forEach(panel=>panel.classList.toggle('hidden',panel!==target));if(updateHash&&history.replaceState)history.replaceState(null,'','#'+id)}
+    tabs.forEach(tab=>tab.addEventListener('click',()=>showTab(tab.dataset.tab)));
+    document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{const id=link.getAttribute('href').slice(1);if(['trayectoria','proyectos','herramientas','perfil'].includes(id)){event.preventDefault();showTab(id);document.querySelector('.tabs').scrollIntoView({behavior:'smooth',block:'start'})}}));
+    const initial=location.hash.slice(1);if(['trayectoria','proyectos','herramientas','perfil'].includes(initial)){showTab(initial,false);requestAnimationFrame(()=>document.querySelector('.tabs').scrollIntoView({block:'start'}))}
+
+    const crumb=document.querySelector('#crumb');let oldY=scrollY,ticking=false;
+    addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(()=>{const y=scrollY;crumb.style.transform=y>oldY&&y>90?'translateY(-100%)':'translateY(0)';oldY=y;ticking=false});ticking=true}},{passive:true});
+  </script>
 </body>
 </html>
-
