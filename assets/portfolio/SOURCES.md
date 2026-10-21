@@ -27,3 +27,18 @@ Fotografías e ilustración seleccionadas por SoyKhaler; copias locales optimiza
 - https://cdn.pixabay.com/photo/2021/12/03/21/56/lantern-6843880_1280.jpg
 - https://cdn.pixabay.com/photo/2021/09/26/20/49/world-6658881_1280.jpg
 - https://cdn.pixabay.com/photo/2021/12/03/21/56/lamps-6843881_1280.jpg
+
+## Diseño gráfico local
+
+- `local/ilustracion-3d.webp`, `local/catrina-aqualon.webp` y `local/portada-soundbreak.webp`: archivos del directorio local `/home/soykhaler/Desktop/diseños/`.
+- `local/sueno-torero.jpg`: portada de *Sueño Torero* de Antonia Cortés, obtenida del catálogo de Apple Music. La ficha enlaza al producto de Amazon indicado por el autor.
+
+## Vídeo interactivo
+
+- `interactive/ladeuda-3.webp`: fotografía de making of de La Deuda, https://soykhaler.itch.io/ladeuda.
+- `interactive/el-enviado-1.webp`: fotografía del equipo de El Enviado, https://soykhaler.itch.io/el-enviado.
+- Portadas oficiales de itch.io guardadas como `interactive/ladeuda-cover.webp` y `interactive/el-enviado-cover.webp`.
+
+## Banner principal
+
+Banner facilitado por SoyKhaler, coincidente con `/home/soykhaler/Desktop/THINGS/banner_itch.jpg`. Copia en `soykhaler-banner.jpg` y variantes WebP en `assets/banner/`.
